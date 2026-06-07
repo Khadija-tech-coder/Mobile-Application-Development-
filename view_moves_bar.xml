@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    android:background="#880B0C10">
+
+    <TextView
+        android:id="@+id/tv_moves_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moves_bar_label"
+        android:textSize="14sp"
+        android:textColor="@color/aurora_text_secondary"
+        android:layout_marginEnd="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_moves_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="18sp"
+        android:textColor="@color/aurora_cyan"
+        android:textStyle="bold"/>
+
+</LinearLayout>

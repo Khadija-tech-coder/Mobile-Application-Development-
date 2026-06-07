@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.puzzleverse.game.AuroraBackgroundView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <!-- App title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="PUZZLE"
+            android:textColor="#66FCF1"
+            android:textSize="64sp"
+            android:letterSpacing="0.1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="VERSE"
+            android:textColor="#C5C6C7"
+            android:textSize="32sp"
+            android:letterSpacing="0.5"
+            android:layout_marginTop="-16dp" />
+
+        <!-- Coin balance pill -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#33FFD700"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:layout_marginTop="28dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🪙"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_coins_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="0"
+                android:textColor="#FFD700"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="coins"
+                android:textColor="#C5C6C7"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Play button -->
+        <Button
+            android:id="@+id/btn_play"
+            android:layout_width="200dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#45A29E"
+            android:text="PLAY"
+            android:textColor="#0B0C10"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</FrameLayout>
